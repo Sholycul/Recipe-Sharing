@@ -1,6 +1,6 @@
 from flask import render_template, redirect, url_for, flash, jsonify
-from app.forms import LoginForm, RegistrationForm, RecipeForm
-from app.models import User, Recipe, Comment, Rating
+from forms import LoginForm, RegistrationForm, RecipeForm
+from models import User, Recipe, Comment, Rating
 from app import app, db
 from flask_login import current_user, login_user, logout_user, login_required
 

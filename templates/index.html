@@ -1,0 +1,14 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to Lindaly Recipe App!</h1>
+  <p class="lead">Share your favorite recipes and discover new ones.</p>
+  <hr class="my-4">
+  <p>To get started, please <a href="{{ url_for('register') }}">register</a> or <a href="{{ url_for('login') }}">Log In</a>.</p>
+</div>
+{% endblock %}
+
+

@@ -1,0 +1,18 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+Recipes
+{% endblock %}
+
+{% block content %}
+<h1>Recipes</h1>
+<ul class="list-group">
+  <li class="list-group-item">
+    <h2>{{ recipes['title'][item_list] }}</h2>
+    <p><strong>Ingredients:</strong></p>
+    <p>{{ recipes['ingredients'][item_list] }}</p>
+    <p><strong>Instructions:</strong></p>
+    <p>{{ recipes['instructions'][item_list] }}</p>
+  </li>
+</ul>
+{% endblock %}

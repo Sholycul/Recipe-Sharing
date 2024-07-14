@@ -124,18 +124,18 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="logo">MySite</div>
+        <div class="logo">Recipe Sharing Ap</div>
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="{{ url_for('index') }}">Home</a>
+	    <a href="{{ url_for('index') }}">About</a>
+            <a href="{{ url_for('index') }}">Contact</a>
         </div>
     </div>
     <main class="container">
         {% block content %} {% endblock %}
     </main>
     <div class="footer">
-        &copy; 2024 MySite. All rights reserved.
+        &copy; ShawLinda2024. All rights reserved.
     </div>
 </body>
 </html>

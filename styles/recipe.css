@@ -1,0 +1,277 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+header {
+    background-color: #ffc400;
+    color: #006400;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 40px;
+    height: auto;
+    padding: 10px;
+}
+
+#site-title {
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #006400;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section#home {
+    text-align: center;
+}
+
+section#home h1 {
+    font-size: 2.5rem;
+    color: #006400;
+}
+
+section#home p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+section#home button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #006400;
+    border: none;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+section#features {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature {
+    width: 30%;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* About section styles */
+.about {
+    background-color: #fff8dc; /* A light yellow color for the background */
+    text-align: center;
+    padding: 20px;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.about ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about ul li {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+/* Contact section styles */
+.contact {
+    background-color: #f0f8ff; /* Choose a background color suitable for your design */
+    padding: 20px;
+}
+
+section#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+section#contact form label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+section#contact form input,
+section#contact form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+section#contact form button {
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #006400;
+    border: none;
+    cursor: pointer;
+}
+
+/* Slider Styles */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    display: none;
+}
+
+.slider img.active {
+    display: block;
+}
+
+/* Feature Section Styles */
+.feature {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.features div {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.feature-image {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+
+/* Slides section styles */
+.slides {
+    margin: 20px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.get-started-button {
+    background-color: #006400;
+    color: #ffc400;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.get-started-button:hover {
+    background-color: #e07b00; /* Darker color on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+

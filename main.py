@@ -67,7 +67,7 @@ def get_recipes():
     return pd.DataFrame()
 
 data_available = get_recipes()
-print(data_available.title[0])
+
 def authenticate_user(email, password):
     users_df = get_users()
     user = users_df[users_df['email'] == email]
@@ -123,7 +123,7 @@ def add_recipe():
 @app.route('/recipes', methods=['GET', 'POST'])
 def recipes():
     all_recipes = data_available
-    return render_template('recipes.html', recipes=all_recipes, item_list=0)
+    return render_template('recipes.html', recipes=all_recipes, item_list=[0, 1])
 
 
 if __name__ == "__main__":
